@@ -36,7 +36,7 @@ from transcription_helpers import transcribe_batched
 app = Flask(__name__)
 api = Api(app)
 
-mtypes = {"cpu": "int8", "cuda": "float16"}
+mtypes = {"cpu": "int8", "cuda": "int8"}
 
 class Transcribe(Resource):
     def post(self):
